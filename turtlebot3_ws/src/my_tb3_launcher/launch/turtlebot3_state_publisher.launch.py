@@ -55,7 +55,7 @@ def generate_launch_description():
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
-            node_namespace='tb3_0',  # <------------------- ADD THIS!
+            namespace='tb3_0',  # <------------------- ADD THIS!
             output='screen',
             parameters=[rsp_params, {'use_sim_time': use_sim_time}])
     ])
