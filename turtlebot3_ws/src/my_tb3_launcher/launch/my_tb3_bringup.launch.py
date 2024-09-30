@@ -81,7 +81,7 @@ def generate_launch_description():
         ),
 
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([lidar_pkg_dir, LDS_LAUNCH_FILE]),
+            PythonLaunchDescriptionSource([ThisLaunchFileDir(), LDS_LAUNCH_FILE]),   #<--- CHANGE THIS
             launch_arguments={'port': '/dev/ttyUSB0', 'frame_id': 'base_scan'}.items(),
         ),
 
