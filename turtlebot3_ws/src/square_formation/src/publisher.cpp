@@ -30,7 +30,7 @@ class MinimalPublisher : public rclcpp::Node
     {
       auto message = std_msgs::msg::String();
       auto message2 = geometry_msgs::msg::Twist();    
-      message.data = "Hello, world! " + std::to_string(count_++);
+      message.data = "Hello, world! v02" + std::to_string(count_++);
       message2.linear.x = 0.01;
       message2.linear.y = 0.00;
       message2.linear.z = 0.00;
